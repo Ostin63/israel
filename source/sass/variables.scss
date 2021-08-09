@@ -4,6 +4,9 @@ $desktop-width: 1024px;
 :root {
   --white: #ffffff;
   --black: #000000;
+  --black-0: rgba(0, 0, 0, 0);
+  --black-5: rgba(0, 0, 0, 0.05);
+  --black-24: rgba(3, 3, 3, 0.24);
   --grey: #484848;
   --blue: #1fc0fc;
   --yellow: #ffc341;
@@ -11,7 +14,18 @@ $desktop-width: 1024px;
   --error: #ff0000;
 }
 
-$active: linear-gradient(108.42deg, var(--yellow) 20.46%, var(--gradient-active) 65.31%);
+$grey-20: rgba(#484848, 20%);
 
-$font-fira-sans: "Fira Sans", "Arial", sans-serif;
-$font-raleway: "Raleway", "Arial", sans-serif;
+$gradient-active: linear-gradient(108.42deg, var(--yellow) 20.46%, var(--gradient-active) 65.31%);
+$gradient-hover: linear-gradient(109.15deg, var(--yellow) -50.3%, var(--gradient-active) 63.1%);
+$gradient-click: radial-gradient(150% 119.49% at 50% 50.85%, var(--black-0) 30.67%, var(--black-24) 100%),
+linear-gradient(109.15deg, var(--yellow) -50.3%, var(--gradient-active) 63.1%);
+
+$shadow-5: 0 1px 4px var(--black-5);
+
+$font-fira-sans: "Fira Sans",
+"Arial",
+sans-serif;
+$font-raleway: "Raleway",
+"Arial",
+sans-serif;
