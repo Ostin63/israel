@@ -1,0 +1,17 @@
+$tablet-width: 768px;
+$desktop-width: 1024px;
+
+:root {
+  --white: #ffffff;
+  --black: #000000;
+  --grey: #484848;
+  --blue: #1fc0fc;
+  --yellow: #ffc341;
+  --gradient-active: #ffd701;
+  --error: #ff0000;
+}
+
+$active: linear-gradient(108.42deg, var(--yellow) 20.46%, var(--gradient-active) 65.31%);
+
+$font-fira-sans: "Fira Sans", "Arial", sans-serif;
+$font-raleway: "Raleway", "Arial", sans-serif;
