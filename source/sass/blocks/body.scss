@@ -1,0 +1,36 @@
+.body {
+  margin: 0;
+  padding: 0;
+  display: grid;
+
+  &::after {
+    content: "";
+    background:
+      url("../img/bg.png") 50% 32px no-repeat;
+    background-size: auto 605px;
+    grid-column: 1 / -1;
+    grid-row: 1 / 3;
+    z-index: -1;
+
+    @media (min-width: $tablet-width) {
+      height: 906px;
+      background-position: 50% 0;
+      background-size: auto;
+    }
+  }
+}
+
+.body__header {
+  grid-column: 1 / -1;
+  grid-row: 1 / 2;
+}
+
+.body__main {
+  grid-column: 1 / -1;
+  grid-row: 2 / 3;
+}
+
+.body__fooer {
+  grid-column: 1 / -1;
+  grid-row: 3 / -1;
+}

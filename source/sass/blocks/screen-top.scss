@@ -1,0 +1,40 @@
+.screen-top {
+  padding: 272px 16px 80px;
+  background:
+    url("../img/photo-girl-min.png") 50% 50% no-repeat,
+    url("../img/israel-min.png") 50% 70px no-repeat;
+
+  @media (min-width: $tablet-width) {
+    padding-top: 458px;
+    background:
+      url("../img/photo-girl-max.png") 50% 50% no-repeat,
+      url("../img/israel-max.png") 50% 45px no-repeat;
+  }
+}
+
+.screen-top__title {
+  width: 288px;
+  margin: 0 auto;
+  text-align: center;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 20px;
+  line-height: 24px;
+  font-family: $font-fira-sans;
+  color: var(--white);
+  text-shadow: $shadow-12;
+
+  @media (min-width: $tablet-width) {
+    width: 343px;
+    font-size: 24px;
+    line-height: 29px;
+  }
+}
+
+.screen-top__button {
+  width: 76px;
+  height: 132px;
+  margin: 32px auto 0;
+  display: block;
+  background: url("../img/scroll-down.png") 50% 50% no-repeat;
+}

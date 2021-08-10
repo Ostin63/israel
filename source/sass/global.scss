@@ -4,6 +4,34 @@
   box-sizing: border-box;
 }
 
+.title {
+  font-weight: bold;
+  font-size: 32px;
+  line-height: 39px;
+  letter-spacing: -0.02em;
+  text-transform: uppercase;
+  font-family: $font-montserrat;
+  color: var(--blue);
+
+  @media (min-width: $tablet-width) {
+    font-size: 40px;
+    line-height: 49px;
+  }
+}
+
+.text {
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 160%;
+  font-family: $font-fira-sans;
+  color: var(--special-black);
+
+  @media (min-width: $tablet-width) {
+    font-size: 17px;
+    line-height: 170%;
+  }
+}
+
 .visually-hidden {
   position: fixed;
   transform: scale(0);

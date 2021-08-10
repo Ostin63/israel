@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ru">
 
 <head>
   <meta charset="UTF-8">
@@ -9,133 +9,153 @@
   <link rel="stylesheet" href="css/style.min.css">
 </head>
 
-<body>
+<body class="body">
 
-  <header class="header">
+  <header class="body__header header">
     <a class="header__button-logo" href="#">
-      <img class="header__logo" src="img/logo.png" width="137" height="48" alt="Логотип">
+      <picture>
+        <source media="(min-width: 768px)" srcset="img/logo.png">
+        <img class="header__logo" src="img/logo-min.png" width="120" height="42" alt="Логотип">
+      </picture>
     </a>
-    <a class="header__phone-link" href="tel:+97226216581">+ (972) 2 – 621 – 6581</a>
-    <a class="header__order-call" href="#">заказать звонок</a>
+    <a class="header__link header__link--phone" href="tel:+97226216581">+ (972) 2 – 621 – 6581</a>
+    <a class="header__link header__link--call" href="#">заказать звонок</a>
   </header>
 
-  <main>
+  <main class="body__main">
     <section class="screen-top">
       <h1 class="screen-top__title">Учёба, путешествие и карьера
         для еврейской молодёжи</h1>
-      <a class="screen-top__button" href="#">
+      <a class="screen-top__button" href="#10">
         <span class="visually-hidden">подсказка скролл вниз</span>
       </a>
     </section>
     <section class="promo">
-      <h2 class="promo__title">О программе</h2>
-      <p class="promo__text">«Маса» — совместный проект правительства Израиля и Еврейского агентства Сохнут. Более 250
-        учебных программ (60 на
-        русском) и возможность стажировки в Израиле.В течение освоения программ предусмотрен грант от 4200 до 8400$.</p>
-      <video class="promo__vileo" src="#"></video>
+      <h2 class="promo__title title">О программе</h2>
+      <p class="promo__text text">«Маса» — совместный проект правительства Израиля и Еврейского агентства Сохнут. Более
+        250
+        учебных программ (60 на русском) и возможность стажировки в Израиле. В течение освоения программ предусмотрен
+        грант от 4200 до 8400$.</p>
+      <div class="promo__wrapper-video">
+        <div class="promo__wrapper-img">
+          <img class="promo__img-video" src="img/video-about-max.png" alt="Заставка видео">
+        </div>
+        <a class="promo__link" href="#">
+          <svg class="promo__video-svg" role="img" aria-label="кнопка запуска видео" width="80" height="80">
+            <use xlink:href="img/stack.svg#play-button"></use>
+          </svg>
+        </a>
+        <div class="promo__video">
+          <video class="promo__video-play" src="#" controls poster="img/video-about-min.png"></video>
+        </div>
+      </div>
     </section>
-    <section class="programs">
-      <h2 class="programs__title">программы</h2>
-      <ul class="programs__buttons">
-        <li class="programs__item-button">
+    <section class="program">
+      <h2 class="program__title  title">программы</h2>
+      <ul class="program__buttons">
+        <li class="program__item-button">
           <a href="#" class="program__item-link">
             <svg class="program__svg-icon" role="img" width="36" height="36">
               <use xlink:href="img/stack.svg#general"></use>
             </svg>
           </a>
-          <p class="programs__item-text">Общие</p>
+          <p class="program__item-text">Общие</p>
         </li>
-        <li class="programs__item-button">
+        <li class="program__item-button">
           <a href="#" class="program__item-link">
-            <a href="#" class="program__item-link">
-              <svg class="program__svg-icon" role="img" width="36" height="36">
-                <use xlink:href="img/stack.svg#academic"></use>
-              </svg>
-            </a>
-            <p class="programs__item-text">Академические</p>
+            <svg class="program__svg-icon" role="img" width="36" height="36">
+              <use xlink:href="img/stack.svg#academic"></use>
+            </svg>
           </a>
+          <p class="program__item-text">Академические</p>
         </li>
-        <li class="programs__item-button">
+        <li class="program__item-button">
           <a href="#" class="program__item-link">
-            <a href="#" class="program__item-link">
-              <svg class="program__svg-icon" role="img" width="36" height="36">
-                <use xlink:href="img/stack.svg#traineeship"></use>
-              </svg>
-            </a>
-            <p class="programs__item-text">Стажировки</p>
+            <svg class="program__svg-icon" role="img" width="36" height="36">
+              <use xlink:href="img/stack.svg#traineeship"></use>
+            </svg>
           </a>
+          <p class="program__item-text">Стажировки</p>
         </li>
-        <li class="programs__item-button">
+        <li class="program__item-button">
           <a href="#" class="program__item-link">
-            <a href="#" class="program__item-link">
-              <svg class="program__svg-icon" role="img" width="36" height="36">
-                <use xlink:href="img/stack.svg#volunteering"></use>
-              </svg>
-            </a>
-            <p class="programs__item-text">Волонтёрство</p>
+            <svg class="program__svg-icon" role="img" width="36" height="36">
+              <use xlink:href="img/stack.svg#volunteering"></use>
+            </svg>
           </a>
+          <p class="program__item-text">Волонтёрство</p>
         </li>
-        <li class="programs__item-button">
+        <li class="program__item-button">
           <a href="#" class="program__item-link">
-            <a href="#" class="program__item-link">
-              <svg class="program__svg-icon" role="img" width="36" height="36">
-                <use xlink:href="img/stack.svg#religious"></use>
-              </svg>
-            </a>
-            <p class="programs__item-text">Религиозные</p>
+            <svg class="program__svg-icon" role="img" width="36" height="36">
+              <use xlink:href="img/stack.svg#religious"></use>
+            </svg>
           </a>
+          <p class="program__item-text">Религиозные</p>
         </li>
       </ul>
-      <ul class="programs__list">
-        <li class="programs__item">
-          <h3 class="programs__item-title">Общие</h3>
-          <p class="programs__text">Провести семестр или год за рубежом, знакомясь с различными культурамии идеями,
+      <ul class="program__list">
+        <li class="program__item">
+          <h3 class="program__item-title">Общие</h3>
+          <p class="program__text">Провести семестр или год за рубежом, знакомясь с различными культурами и идеями,
             традициями и стилем жизни — вот что такое учеба за границей! Израиль — это не только центр религиозного
-            мира, это также академический центр, живая лаборатория идей и творческого исследования.
-            Может быть, Вы заинтересованы в изучении социологии, мира, юриспруденции, биологии, сравнительной религии,
-            законодательногои делового администрирования или искусства? Здесь, в Израиле, Вы сможете
-            изучить все это в удивительной университетской среде.</p>
+            мира, это также академический центр, живая лаборатория идей и творческого исследования. Может быть, Вы
+            заинтересованы в изучении социологии, мира, юриспруденции, биологии, сравнительной религии, законодательного
+            и делового администрирования или искусства? Здесь, в Израиле, Вы сможете изучить все это в удивительной
+            университетской среде.</p>
         </li>
-        <li class="programs__item">
-          <h3 class="programs__item-title">Академические</h3>
-          <p class="programs__text">Провести семестр или год за рубежом, знакомясь с различными культурамии идеями,
-            традициями и стилем жизни — вот что такое учеба за границей! Израиль — это не только центр религиозного
-            мира, это также академический центр, живая лаборатория идей и творческого исследования.
-            Может быть, Вы заинтересованы в изучении социологии, мира, юриспруденции, биологии, сравнительной религии,
-            законодательногои делового администрирования или искусства? Здесь, в Израиле, Вы сможете
-            изучить все это в удивительной университетской среде.</p>
+        <li class="program__item">
+          <h3 class="program__item-title">Академические</h3>
+          <p class="program__text">Провести семестр или год за рубежом, знакомясь с различными культурами и идеями,
+            традициями и стилем жизни — вот что
+            такое учеба за границей! Израиль — это не только центр религиозного мира, это также академический центр,
+            живая
+            лаборатория идей и творческого исследования. Может быть, Вы заинтересованы в изучении социологии, мира,
+            юриспруденции,
+            биологии, сравнительной религии, законодательного и делового администрирования или искусства? Здесь, в
+            Израиле, Вы
+            сможете изучить все это в удивительной университетской среде.</p>
         </li>
-        <li class="programs__item">
-          <h3 class="programs__item-title">Стажировки</h3>
-          <p class="programs__text">Провести семестр или год за рубежом, знакомясь с различными культурамии идеями,
-            традициями и стилем жизни — вот что такое учеба за границей! Израиль — это не только центр религиозного
-            мира, это также академический центр, живая лаборатория идей и творческого исследования.
-            Может быть, Вы заинтересованы в изучении социологии, мира, юриспруденции, биологии, сравнительной религии,
-            законодательногои делового администрирования или искусства? Здесь, в Израиле, Вы сможете
-            изучить все это в удивительной университетской среде.</p>
+        <li class="program__item">
+          <h3 class="program__item-title">Стажировки</h3>
+          <p class="program__text">Провести семестр или год за рубежом, знакомясь с различными культурами и идеями,
+            традициями и стилем жизни — вот что
+            такое учеба за границей! Израиль — это не только центр религиозного мира, это также академический центр,
+            живая
+            лаборатория идей и творческого исследования. Может быть, Вы заинтересованы в изучении социологии, мира,
+            юриспруденции,
+            биологии, сравнительной религии, законодательного и делового администрирования или искусства? Здесь, в
+            Израиле, Вы
+            сможете изучить все это в удивительной университетской среде.</p>
         </li>
-        <li class="programs__item">
-          <h3 class="programs__item-title">Волонтёрство</h3>
-          <p class="programs__text">Провести семестр или год за рубежом, знакомясь с различными культурамии идеями,
-            традициями и стилем жизни — вот что такое учеба за границей! Израиль — это не только центр религиозного
-            мира, это также академический центр, живая лаборатория идей и творческого исследования.
-            Может быть, Вы заинтересованы в изучении социологии, мира, юриспруденции, биологии, сравнительной религии,
-            законодательногои делового администрирования или искусства? Здесь, в Израиле, Вы сможете
-            изучить все это в удивительной университетской среде.</p>
+        <li class="program__item">
+          <h3 class="program__item-title">Волонтёрство</h3>
+          <p class="program__text">Провести семестр или год за рубежом, знакомясь с различными культурами и идеями,
+            традициями и стилем жизни — вот что
+            такое учеба за границей! Израиль — это не только центр религиозного мира, это также академический центр,
+            живая
+            лаборатория идей и творческого исследования. Может быть, Вы заинтересованы в изучении социологии, мира,
+            юриспруденции,
+            биологии, сравнительной религии, законодательного и делового администрирования или искусства? Здесь, в
+            Израиле, Вы
+            сможете изучить все это в удивительной университетской среде.</p>
         </li>
-        <li class="programs__item">
-          <h3 class="programs__item-title">Религиозные</h3>
-          <p class="programs__text">Провести семестр или год за рубежом, знакомясь с различными культурамии идеями,
-            традициями и стилем жизни — вот что такое учеба за границей! Израиль — это не только центр религиозного
-            мира, это также академический центр, живая лаборатория идей и творческого исследования.
-            Может быть, Вы заинтересованы в изучении социологии, мира, юриспруденции, биологии, сравнительной религии,
-            законодательногои делового администрирования или искусства? Здесь, в Израиле, Вы сможете
-            изучить все это в удивительной университетской среде.</p>
+        <li class="program__item">
+          <h3 class="program__item-title">Религиозные</h3>
+          <p class="program__text">Провести семестр или год за рубежом, знакомясь с различными культурами и идеями,
+            традициями и стилем жизни — вот что
+            такое учеба за границей! Израиль — это не только центр религиозного мира, это также академический центр,
+            живая
+            лаборатория идей и творческого исследования. Может быть, Вы заинтересованы в изучении социологии, мира,
+            юриспруденции,
+            биологии, сравнительной религии, законодательного и делового администрирования или искусства? Здесь, в
+            Израиле, Вы
+            сможете изучить все это в удивительной университетской среде.</p>
         </li>
       </ul>
     </section>
     <section class="want-go">
-      <h2 class="want-go__title">Хочу поехать!</h2>
+      <h2 class="want-go__title  title">Хочу поехать!</h2>
       <p class="want-go__text">Оставьте свой телефон и мы свяжемся с вами, подберём куратора и ответим на все вопросы!
       </p>
       <form class="want-go__form" action="https://echo.htmlacademy.ru/" method="POST">
@@ -145,7 +165,7 @@
       </form>
     </section>
     <section class="how-go">
-      <h2 class="how-go__title">Как поехать</h2>
+      <h2 class="how-go__title title">Как поехать</h2>
       <p class="how-go__text">Чтобы узнать подробнее о программе, свяжитесь с координатором в вашем городе. Вы получите
         актуальные сведения о
         доступных программах и городах, в которых можете пройти программу.</p>
@@ -169,50 +189,50 @@
         принять участие в программе «Маса», оплатив её полную стоимость.</p>
     </section>
     <section class="life">
-      <h2 class="live__title">Жизнь в израиле</h2>
-      <p class="live__text">Помимо учёбы, в рамках программе у вас будет возможность путешествовать по стране и
+      <h2 class="life__title title">Жизнь в израиле</h2>
+      <p class="life__text">Помимо учёбы, в рамках программе у вас будет возможность путешествовать по стране и
         познакомиться с богатой
         культурно-исторической жизнью Израиля и его жителей.</p>
-      <ul class="live__list">
-        <li class="live__item live__item--active">
-          <p class="live__item-text">Экскурсии по Израилю и знакомство с его историей</p>
-          <img src="" alt="" class="live__item-img">
+      <ul class="life__list">
+        <li class="life__item life__item--active">
+          <p class="life__item-text">Экскурсии по Израилю и знакомство с его историей</p>
+          <img src="img/" alt="" class="life__item-img">
         </li>
-        <li class="live__item">
-          <p class="live__item-text">Экскурсии по Израилю и знакомство с его историей</p>
-          <img src="" alt="" class="live__item-img">
+        <li class="life__item">
+          <p class="life__item-text">Экскурсии по Израилю и знакомство с его историей</p>
+          <img src="img/" alt="" class="life__item-img">
         </li>
-        <li class="live__item">
-          <p class="live__item-text">Обучение современным навыкам и профессиям</p>
-          <img src="" alt="" class="live__item-img">
+        <li class="life__item">
+          <p class="life__item-text">Обучение современным навыкам и профессиям</p>
+          <img src="img/" alt="" class="life__item-img">
         </li>
-        <li class="live__item">
-          <p class="live__item-text">Совместные творческие проекты
+        <li class="life__item">
+          <p class="life__item-text">Совместные творческие проекты
             с израильской молодёжью</p>
-          <img src="" alt="" class="live__item-img">
+          <img src="img/" alt="" class="life__item-img">
         </li>
-        <li class="live__item">
-          <p class="live__item-text">Развитие лидерства</p>
-          <img src="" alt="" class="live__item-img">
+        <li class="life__item">
+          <p class="life__item-text">Развитие лидерства</p>
+          <img src="img/" alt="" class="life__item-img">
         </li>
       </ul>
-      <ul class="live__list-button">
-        <li class="live__buton live__buton--active"></li>
-        <li class="live__buton"></li>
-        <li class="live__buton"></li>
-        <li class="live__buton"></li>
-        <li class="live__buton"></li>
+      <ul class="life__list-button">
+        <li class="life__buton life__buton--active"></li>
+        <li class="life__buton"></li>
+        <li class="life__buton"></li>
+        <li class="life__buton"></li>
+        <li class="life__buton"></li>
       </ul>
     </section>
     <section class="foto">
-      <h2 class="foto__title">#masaisrael</h2>
+      <h2 class="foto__title title">#masaisrael</h2>
       <p class="foto__text">Познакомьтесь с программой от первого лица! Многие участники ведут блоги и фотодневники о
         жизни, учёбе и путешествиях в
         Израиле.</p>
       <a href="#" class="foto__link">смотреть фото</a>
     </section>
     <section class="faq">
-      <h2 class="faq__title">частые вопросы</h2>
+      <h2 class="faq__title title">частые вопросы</h2>
       <ul class="faq__questions">
         <li class="faq__item">
           <p class="faq__question">Кто организатор? Какие сроки у программы?</p>
@@ -243,10 +263,10 @@
       </ul>
     </section>
     <section class="reviews">
-      <h2 class="reviews__title">Отзывы</h2>
+      <h2 class="reviews__title title">Отзывы</h2>
       <ul class="reviews__list">
         <li class="reviews__item">
-          <img src="" alt="" class="reviews__img">
+          <img src="img/" alt="" class="reviews__img">
           <p class="reviews__name">Ольга Михайлова</p>
           <p class="reviews__program">
             <span>Программа:</span>Арт-Тель, февраль-сетнябрь 2017
@@ -291,11 +311,89 @@
       </ul>
     </section>
     <section class="details">
-      <h2 class="details__title">Узнать подробности</h2>
+      <h2 class="details__title title">Узнать подробности</h2>
+      <div class="details__location-wrapper">
+        <p class="details__city">Ваш город:</p>
+        <p class="details__location">новосибирск</p>
+      </div>
+      <img src="img/" alt="Фото куратора">
+      <div class="details__curator-wrapper">
+        <p class="details__curator">Ваш куратор:</p>
+        <p class="details__curator-name">Анна Горелик</p>
+      </div>
+      <p class="details__info">Новосибирск, ул. Щетинкина 68, культурный центр «Бейт Менахем»</p>
+      <ul class="details__social">
+        <li class="details__item">
+          <a href="" class="details__link">
+            <svg class="details__social-svg details__social-svg--whatsapp" role="img" aria-label="Мы в Фейсбуке"
+              width="24" height="24">
+              <use xlink:href="img/stack.svg#whatsapp"></use>
+            </svg>
+          </a>
+        </li>
+        <li class="details__item">
+          <a href="" class="details__link">
+            <svg class="details__social-svg details__social-svg--telegram" role="img" aria-label="Мы в Фейсбуке"
+              width="24" height="24">
+              <use xlink:href="img/stack.svg#telegram"></use>
+            </svg>
+            <div class="details__map" id="map"></div>
+          </a>
+        </li>
+      </ul>
+    </section>
+    <section class="feedback">
+      <h2 class="visually-hidden">Обратная связь</h2>
+      <p class="feedback__text feedback__text--top">Оставьте ваши контакты, если у вас
+        остались вопросы — мы на них ответим!</p>
+      <p class="feedback__text feedback__text--bottom">Мы не передаём данные третьим лицам. Ваши данные будут в
+        безопасности и вам не придёт спам от нас!</p>
+      <form class="feedback__form" action="https://echo.htmlacademy.ru/" method="POST">
+        <div class="feedback__wrapper-input">
+          <label for="feedback-name"></label>
+          <input type="text" id="feedback-name" placeholder="Имя">
+        </div>
+        <div class="feedback__wrapper-input">
+          <label for="feedback-phone"></label>
+          <input type="tel" id="feedback-phone" placeholder="+7 (923) 41         ">
+        </div>
+        <button class="feedback__button" type="submit">перезвоните мне</button>
+      </form>
     </section>
   </main>
 
-  <footer></footer>
+  <footer class="body__footer footer" id="10">
+    <a class="footer__button-logo" href="#">
+      <img class="footer__logo" src="img/logo-button-min.png" width="99" height="31" alt="Логотип">
+    </a>
+    <p class="footer__copyright">Copyright someDesignCompany ©2019</p>
+    <ul class="footer__social">
+      <li class="footer__item">
+        <a href="" class="footer__link">
+          <svg class="footer__social-svg footer__social-svg--facebook" role="img" aria-label="Мы в Фейсбуке" width="24"
+            height="24">
+            <use xlink:href="img/stack.svg#facebook"></use>
+          </svg>
+        </a>
+      </li>
+      <li class="footer__item">
+        <a href="" class="footer__link">
+          <svg class="footer__social-svg footer__social-svg--twitter" role="img" aria-label="Мы в Фейсбуке" width="24"
+            height="24">
+            <use xlink:href="img/stack.svg#twitter"></use>
+          </svg>
+        </a>
+      </li>
+      <li class="footer__item">
+        <a href="" class="footer__link">
+          <svg class="footer__social-svg footer__social-svg--instagram" role="img" aria-label="Мы в Инстаграме"
+            width="24" height="24">
+            <use xlink:href="img/stack.svg#instagram"></use>
+          </svg>
+        </a>
+      </li>
+    </ul>
+  </footer>
 
 </body>
 
