@@ -1,0 +1,101 @@
+.want-go {
+  padding: 50px 0 308px;
+  display: grid;
+  grid-template-columns: 16px 1fr 16px;
+  background-image:
+    url("../img/bg-want-go.png"),
+    url("../img/want-go.png");
+  background-repeat: no-repeat;
+  background-position: 0 0, 50% 100%;
+  background-size: 109px 188px, 424px 308px;
+
+  @media (min-width: $tablet-width) {
+    padding: 210px 0 131px;
+    grid-template-columns: 16px 477px 1fr 16px;
+    background-position: 0 45%, 100% 100%;
+    background-size: 147px 262px, 818px 594px;
+  }
+
+  @media (min-width: $desktop-width) {
+    grid-template-columns: 1fr 477px 375px 1fr;
+  }
+}
+
+.want-go__title {
+  margin: 0;
+  text-align: center;
+  grid-column: 2 / -2;
+
+  @media (min-width: $tablet-width) {
+    text-align: left;
+    grid-column: 2 / 3;
+  }
+}
+
+.want-go__text {
+  margin: 24px 0;
+  text-align: left;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 160%;
+  font-family: $font-fira-sans;
+  color: var(--special-black);
+  opacity: 0.87;
+  grid-column: 2 / -2;
+
+  @media (min-width: $tablet-width) {
+    grid-column: 2 / 3;
+  }
+}
+
+.want-go__form {
+  display: flex;
+  flex-direction: column;
+  grid-column: 2 / -2;
+
+  @media (min-width: $tablet-width) {
+    flex-direction: row;
+    text-align: left;
+    grid-column: 2 / 3;
+  }
+}
+
+.want-go__input {
+  height: 59px;
+  margin-bottom: 8px;
+  padding: 0 40px;
+  border: $border-2;
+  border-radius: 80px;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 17px;
+  line-height: 20px;
+  font-variant: small-caps;
+  font-family: $font-fira-sans;
+  color: var(--special-black);
+  opacity: 0.5;
+
+  @media (min-width: $tablet-width) {
+    border-radius: 80px 0 0 80px;
+  }
+}
+
+.want-go__submit {
+  height: 59px;
+  border: $gradient-active;
+  background: $gradient-active;
+  border-radius: 80px;
+  font-weight: 500;
+  font-size: 17px;
+  line-height: 20px;
+  font-variant: small-caps;
+  font-family: $font-fira-sans;
+  color: var(--white);
+  text-shadow: $shadow-12;
+
+  @media (min-width: $tablet-width) {
+    width: 216px;
+    margin-left: -30px;
+    z-index: 1;
+  }
+}

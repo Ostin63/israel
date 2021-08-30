@@ -14,6 +14,7 @@ $desktop-width-only: 1366px;
   --gradient-active: #ffd701;
   --error: #ff0000;
   --special-black: #484848;
+  --gray: #e3e3e3;
 }
 
 $grey-20: rgba(#484848, 20%);
@@ -29,6 +30,7 @@ $shadow-12: 0 1px 4px var(--black-12);
 $shadow-text-12: 0 1.01117px 4.04469px var(--black-12);
 
 $border-dashed: 1px dashed var(--special-black);
+$border-2: 2px solid var(--gray);
 
 $font-fira-sans: "Fira Sans", "Arial", sans-serif;
 $font-raleway: "Raleway", "Arial", sans-serif;
