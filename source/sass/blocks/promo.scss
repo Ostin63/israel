@@ -1,6 +1,17 @@
 .promo {
   display: grid;
   grid-template-columns: 16px 1fr 16px;
+  background: url("../img/promo-bg.png") 50% 75% no-repeat;
+  background-size: 420px 186px;
+
+  @media (min-width: $tablet-width) {
+    background: url("../img/promo-bg-max.png") 50% 75% no-repeat;
+    background-size: 1366px 604px;
+  }
+
+  @media (min-width: $desktop-width-only) {
+    background-size: 100% 604px;
+  }
 }
 
 .promo__title {
