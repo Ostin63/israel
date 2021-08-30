@@ -7,6 +7,7 @@ $desktop-width-only: 1366px;
   --black: #000000;
   --black-0: rgba(0, 0, 0, 0);
   --black-5: rgba(0, 0, 0, 0.05);
+  --black-10: rgba(0, 0, 0, 0.1);
   --black-12: rgba(0, 0, 0, 0.12);
   --black-24: rgba(3, 3, 3, 0.24);
   --blue: #1fc0fc;
@@ -28,6 +29,7 @@ $gradient-click:
 $shadow-5: 0 1px 4px var(--black-5);
 $shadow-12: 0 1px 4px var(--black-12);
 $shadow-text-12: 0 1.01117px 4.04469px var(--black-12);
+$shadow-10: 0 3px 12px var(--black-10);
 
 $border-dashed: 1px dashed var(--special-black);
 $border-2: 2px solid var(--gray);
@@ -35,3 +37,6 @@ $border-2: 2px solid var(--gray);
 $font-fira-sans: "Fira Sans", "Arial", sans-serif;
 $font-raleway: "Raleway", "Arial", sans-serif;
 $font-montserrat: "Montserrat", "Arial", sans-serif;
+
+$border-dashed: 1px dashed $grey-20;
+$border-yellow: 4px solid $gradient-active;

@@ -15,23 +15,103 @@
   margin: 0;
   padding: 24px 0;
   grid-column: 2 / -2;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 160%;
+  font-family: $font-fira-sans;
+  color: var(--special-black);
+  opacity: 0.87;
 }
 
 .how-go__text-big {
   grid-column: 2 / -2;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 160%;
+  font-family: $font-fira-sans;
+  color: var(--special-black);
 }
 
 .how-go__list {
-  margin: 0;
-  padding: 0;
+  margin: 24px 0 24px 10px;
+  padding: 15px 0;
   list-style: none;
+  counter-reset: list1;
   grid-column: 2 / -2;
+  border-left: $border-dashed;
 }
 
-.how-go__item {}
+.how-go__item {
+  height: 66px;
+  margin-bottom: 26px;
+  position: relative;
+  padding-left: 34px;
 
-.how-go__item-text {}
+  &::before {
+    position: absolute;
+    width: 36px;
+    height: 36px;
+    padding: 16px;
+    top: calc(50% - 36px / 2);
+    left: -18px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: bold;
+    font-size: 17px;
+    line-height: 170%;
+    font-family: $font-fira-sans;
+    color: var(--yellow);
+    counter-increment: list1;
+    content: counter(list1) "";
+    background: var(--white);
+    box-shadow: $shadow-10;
+  }
+
+  &:first-child {
+    margin-top: -30px;
+  }
+
+  &:last-child {
+    margin-bottom: -30px;
+  }
+}
+
+.how-go__item-text {
+  height: 66px;
+  margin: auto 0;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 160%;
+  display: flex;
+  align-items: center;
+  font-family: $font-fira-sans;
+  color: var(--special-black);
+  opacity: 0.87;
+}
 
 .how-go__else {
+  position: relative;
+  margin: 24px 0 0;
+  padding-left: 12px;
   grid-column: 2 / -2;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 160%;
+  display: flex;
+  align-items: center;
+  font-family: $font-fira-sans;
+  color: var(--special-black);
+  opacity: 0.5;
+
+  &::before {
+    position: absolute;
+    content: "";
+    width: 4px;
+    height: 88px;
+    top: 0;
+    left: -8px;
+    background: $gradient-active;
+  }
 }
