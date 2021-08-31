@@ -79,7 +79,7 @@
     margin: 0 0 10px 0;
   }
 
-  &--active {
+  &.active {
     background: $gradient-active;
     border-radius: 60.6704px;
 
@@ -125,7 +125,7 @@
   display: none;
   list-style: none;
 
-  &--active {
+  &.active {
     display: block;
   }
 }

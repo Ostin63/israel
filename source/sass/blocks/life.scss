@@ -75,7 +75,7 @@
   grid-template-columns: 28px 1fr 28px;
   grid-template-rows: 313px 87px;
 
-  &--active {
+  &.active {
     display: grid;
   }
 
@@ -219,7 +219,7 @@
   align-items: center;
   cursor: pointer;
 
-  &--active {
+  &.active {
     .life__button {
       width: 8px;
       height: 8px;
