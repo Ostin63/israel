@@ -8,8 +8,8 @@
       url("../img/life-bg.png"),
       url("../img/life-watch.png");
     background-repeat: no-repeat;
-    background-size: 100% 950px, 90px 148px;
-    background-position: 0 20%, 100% 80%;
+    background-size: 1366px 950px, 90px 148px;
+    background-position: 50% 20%, 100% 80%;
   }
 }
 
@@ -136,7 +136,7 @@
   justify-content: center;
   font-family: $font-raleway;
   color: var(--white);
-  text-shadow: $shadow-text-12;
+  text-shadow: $shadow-12;
 
   @media (min-width: $desktop-width-only) {
     width: 100%;
