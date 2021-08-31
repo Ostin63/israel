@@ -1,14 +1,51 @@
 .how-go {
   padding: 80px 0 40px;
+  background-color: var(--white);
+  background-image: url("../img/how-go-stamp.png");
+  background-position: 100% 52%;
+  background-repeat: no-repeat;
+
+  @media (min-width: $tablet-width-only) {
+    padding: 180px 0 160px;
+    background-image:
+      url("../img/bg-how-go.png"),
+      url("../img/how-go-stamp-max.png");
+    background-position: 2% 52%, 100% 52%;
+    background-repeat: no-repeat;
+    z-index: 1;
+  }
+
+
+  @media (min-width: $desktop-width) {
+    background-color: var(--black-0);
+    display: grid;
+    grid-template-columns: 1fr 472px 552px 1fr;
+  }
+}
+
+.how-go__wrapper {
+  max-width: 552px;
+  margin-left: auto;
   display: grid;
   grid-template-columns: 16px 1fr 16px;
-  background: var(--white);
+
+  @media (min-width: $tablet-width) {
+    grid-template-columns: 8px 1fr 16px;
+  }
+
+  @media (min-width: $desktop-width) {
+    grid-column: 3 / -2;
+  }
 }
 
 .how-go__title {
   margin: 0;
   text-align: center;
   grid-column: 2 / -2;
+
+  @media (min-width: $tablet-width-only) {
+    text-align: left;
+  }
 }
 
 .how-go__text {
@@ -92,7 +129,6 @@
 }
 
 .how-go__else {
-  position: relative;
   margin: 24px 0 0;
   padding-left: 12px;
   grid-column: 2 / -2;
@@ -104,14 +140,5 @@
   font-family: $font-fira-sans;
   color: var(--special-black);
   opacity: 0.5;
-
-  &::before {
-    position: absolute;
-    content: "";
-    width: 4px;
-    height: 88px;
-    top: 0;
-    left: -8px;
-    background: $gradient-active;
-  }
+  border-left: $border-yellow;
 }
