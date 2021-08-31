@@ -1,0 +1,231 @@
+.life {
+  padding: 0 0 80px;
+  display: grid;
+  grid-template-columns: 16px 1fr 16px;
+
+  @media (min-width: $desktop-width-only) {
+    background-image:
+      url("../img/life-bg.png"),
+      url("../img/life-watch.png");
+    background-repeat: no-repeat;
+    background-size: 100% 950px, 90px 148px;
+    background-position: 0 20%, 100% 80%;
+  }
+}
+
+.life__title {
+  width: 250px;
+  margin: 0 auto;
+  text-align: center;
+  grid-column: 2 / -2;
+  z-index: 1;
+
+  @media (min-width: $tablet-width) {
+    width: 414px;
+  }
+}
+
+.life__text {
+  max-width: 720px;
+  margin: 24px auto;
+  grid-column: 2 / -2;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 160%;
+  font-family: $font-fira-sans;
+  color: var(--special-black);
+  opacity: 0.87;
+
+  @media (min-width: $tablet-width) {
+    text-align: right;
+  }
+
+  @media (min-width: $desktop-width-only) {
+    margin-bottom: 0;
+    font-size: 17px;
+    line-height: 170%;
+  }
+}
+
+.life__list {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  grid-column: 2 / -2;
+  z-index: 1;
+
+  @media (min-width: $tablet-width) {
+    max-width: 1152px;
+    margin: 0 auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  @media (min-width: $desktop-width-only) {
+    margin-top: -30px;
+    display: grid;
+    grid-template-columns: 482px 15px 211px 30px 170px 30px 211px;
+    grid-template-rows: 66px 318px 30px 318px;
+  }
+}
+
+.life__item {
+  display: none;
+  grid-template-columns: 28px 1fr 28px;
+  grid-template-rows: 313px 87px;
+
+  &--active {
+    display: grid;
+  }
+
+  @media (min-width: $tablet-width) {
+    display: grid;
+    margin-bottom: 30px;
+  }
+
+  @media (min-width: $desktop-width-only) {
+    margin-bottom: 0;
+    grid-template-rows: 236px 82px;
+
+    &--history {
+      grid-template-columns: 40px 1fr 122px;
+      grid-template-rows: 650px 82px;
+      grid-column: 1 / 2;
+      grid-row: 1 / -1;
+    }
+
+    &--hebrew {
+      grid-template-columns: 24px 1fr 67px;
+      grid-column: 3 / 4;
+      grid-row: 2 / 2;
+    }
+
+    &--professions {
+      grid-template-columns: 32px 1fr 59px;
+      grid-column: 5 / -1;
+      grid-row: 2 / 2;
+    }
+
+    &--projects {
+      grid-template-columns: 32px 1fr 19px;
+      grid-column: 3 / 6;
+      grid-row: 4 / -1;
+    }
+
+    &--leadership {
+      grid-template-columns: 24px 1fr 67px;
+      grid-template-rows: 236px 82px;
+      grid-column: -2 / -1;
+      grid-row: 4 / -1;
+    }
+  }
+}
+
+.life__item-text {
+  width: 232px;
+  margin: 0 auto 24px auto;
+  text-align: center;
+  grid-column: 2 / -2;
+  grid-row: 2 / -1;
+  font-weight: 800;
+  font-size: 18px;
+  line-height: 21px;
+  display: flex;
+  align-items: flex-end;
+  justify-content: center;
+  font-family: $font-raleway;
+  color: var(--white);
+  text-shadow: $shadow-text-12;
+
+  @media (min-width: $desktop-width-only) {
+    width: 100%;
+    text-align: left;
+    align-items: flex-start;
+    font-size: 21px;
+    line-height: 25px;
+
+    &--history {
+      margin: 0;
+    }
+  }
+}
+
+.life__img-wrapper {
+  margin: 0 auto;
+  grid-column: 1 / -1;
+  grid-row: 1 / -1;
+  z-index: -1;
+
+  @media (min-width: $desktop-width-only) {
+    margin: 0;
+  }
+}
+
+.life__item-img {
+  width: 288px;
+  height: auto;
+  display: block;
+
+  @media (min-width: $desktop-width-only) {
+    &--history {
+      width: 482px;
+      height: 732px;
+    }
+
+    &--hebrew,
+    &--leadership {
+      width: 211px;
+      height: 318px;
+    }
+
+    &--professions,
+    &--projects {
+      width: 411px;
+      height: 318px;
+    }
+  }
+}
+
+.life__list-button {
+  width: 64px;
+  margin: 16px auto 0;
+  padding: 0;
+  list-style: none;
+  grid-column: 2 / -2;
+  display: flex;
+  justify-content: space-between;
+
+  @media (min-width: $tablet-width) {
+    display: none;
+  }
+}
+
+.life__button {
+  width: 6px;
+  height: 6px;
+  padding: 0;
+  border: $border-0;
+  border-radius: 50%;
+  background: var(--special-black);
+  opacity: 0.2;
+}
+
+.life__item-button {
+  width: 8px;
+  height: 8px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+
+  &--active {
+    .life__button {
+      width: 8px;
+      height: 8px;
+      border: none;
+      background: $gradient-active;
+      opacity: 1;
+    }
+  }
+}

@@ -166,7 +166,8 @@
     <section class="main__how-go how-go">
       <div class="how-go__wrapper">
         <h2 class="how-go__title title">Как поехать</h2>
-        <p class="how-go__text">Чтобы узнать подробнее о программе, свяжитесь с координатором в вашем городе. Вы получите
+        <p class="how-go__text">Чтобы узнать подробнее о программе, свяжитесь с координатором в вашем городе. Вы
+          получите
           актуальные сведения о
           доступных программах и городах, в которых можете пройти программу.</p>
         <strong class="how-go__text-big">Чтобы иметь возможность получить грант на обучение от 4200 до 8400$, вы
@@ -186,44 +187,79 @@
             <p class="how-go__item-text">За последние 2 года быть не больше 3х месяцев подряд непрерывно в Израиле.</p>
           </li>
         </ol>
-        <p class="how-go__else">Если вы не подходите по этим правилам, вы всё равно можете принять участие в программе «Маса»,
+        <p class="how-go__else">Если вы не подходите по этим правилам, вы всё равно можете принять участие в программе
+          «Маса»,
           оплатив её полную стоимость.</p>
       </div>
     </section>
     <section class="main__life life">
-      <h2 class="life__title title">Жизнь в израиле</h2>
+      <h2 class="life__title title">Жизнь в&nbsp;израиле</h2>
       <p class="life__text">Помимо учёбы, в рамках программе у вас будет возможность путешествовать по стране и
         познакомиться с богатой
         культурно-исторической жизнью Израиля и его жителей.</p>
       <ul class="life__list">
-        <li class="life__item life__item--active">
-          <p class="life__item-text">Экскурсии по Израилю и знакомство с его историей</p>
-          <img src="img/" alt="" class="life__item-img">
+        <li class="life__item life__item--history life__item--active">
+          <p class="life__item-text life__item-text--history">Экскурсии по Израилю и знакомство с его историей</p>
+          <div class="life__img-wrapper">
+            <picture>
+              <source media="(min-width: 1366px)" srcset="img/life-img-1-max.png">
+              <img src="img/life-img-1.png" alt="Фото" class="life__item-img life__item-img--history">
+            </picture>
+          </div>
         </li>
-        <li class="life__item">
-          <p class="life__item-text">Экскурсии по Израилю и знакомство с его историей</p>
-          <img src="img/" alt="" class="life__item-img">
+        <li class="life__item life__item--hebrew">
+          <p class="life__item-text life__item-text--hebrew">Изучение иврита</p>
+          <div class="life__img-wrapper">
+            <picture>
+              <source media="(min-width: 1366px)" srcset="img/life-img-2-max.png">
+              <img src="img/life-img-2.png" alt="Фото" class="life__item-img life__item-img--hebrew">
+            </picture>
+          </div>
         </li>
-        <li class="life__item">
-          <p class="life__item-text">Обучение современным навыкам и профессиям</p>
-          <img src="img/" alt="" class="life__item-img">
+        <li class="life__item life__item--professions">
+          <p class="life__item-text life__item-text--professions">Обучение современным навыкам и профессиям</p>
+          <div class="life__img-wrapper">
+            <picture>
+              <source media="(min-width: 1366px)" srcset="img/life-img-3-max.png">
+              <img src="img/life-img-3.png" alt="Фото" class="life__item-img life__item-img--professions">
+            </picture>
+          </div>
         </li>
-        <li class="life__item">
-          <p class="life__item-text">Совместные творческие проекты
-            с израильской молодёжью</p>
-          <img src="img/" alt="" class="life__item-img">
+        <li class="life__item life__item--projects">
+          <p class="life__item-text life__item-text--projects">Совместные творческие проекты с израильской молодёжью</p>
+          <div class="life__img-wrapper">
+            <picture>
+              <source media="(min-width: 1366px)" srcset="img/life-img-4-max.png">
+              <img src="img/life-img-4.png" alt="Фото" class="life__item-img life__item-img--projects">
+            </picture>
+          </div>
         </li>
-        <li class="life__item">
-          <p class="life__item-text">Развитие лидерства</p>
-          <img src="img/" alt="" class="life__item-img">
+        <li class="life__item life__item--leadership">
+          <p class="life__item-text life__item-text--leadership">Развитие лидерства</p>
+          <div class="life__img-wrapper">
+            <picture>
+              <source media="(min-width: 1366px)" srcset="img/life-img-5-max.png">
+              <img src="img/life-img-5.png" alt="Фото" class="life__item-img life__item-img--leadership">
+            </picture>
+          </div>
         </li>
       </ul>
       <ul class="life__list-button">
-        <li class="life__buton life__buton--active"></li>
-        <li class="life__buton"></li>
-        <li class="life__buton"></li>
-        <li class="life__buton"></li>
-        <li class="life__buton"></li>
+        <li class="life__item-button life__item-button--active">
+          <button class="life__button"></button>
+        </li>
+        <li class="life__item-button">
+          <button class="life__button"></button>
+        </li>
+        <li class="life__item-button">
+          <button class="life__button"></button>
+        </li>
+        <li class="life__item-button">
+          <button class="life__button"></button>
+        </li>
+        <li class="life__item-button">
+          <button class="life__button"></button>
+        </li>
       </ul>
     </section>
     <section class="main__foto foto">
@@ -397,6 +433,7 @@
     </ul>
   </footer>
 
+  <script src="js/script.min.js"></script>
 </body>
 
 </html>
