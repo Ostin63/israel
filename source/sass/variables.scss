@@ -32,9 +32,6 @@ $shadow-12: 0 1px 4px var(--black-12);
 $shadow-text-12: 0 1.01117px 4.04469px var(--black-12);
 $shadow-10: 0 3px 12px var(--black-10);
 
-$border-dashed: 1px dashed var(--special-black);
-$border-2: 2px solid var(--gray);
-
 $font-fira-sans: "Fira Sans", "Arial", sans-serif;
 $font-raleway: "Raleway", "Arial", sans-serif;
 $font-montserrat: "Montserrat", "Arial", sans-serif;
@@ -42,3 +39,5 @@ $font-montserrat: "Montserrat", "Arial", sans-serif;
 $border-dashed: 1px dashed $grey-20;
 $border-yellow: 4px solid var(--yellow);
 $border-0: 1px dashed var(--black-0);
+$border-dashed: 1px dashed var(--special-black);
+$border-2: 2px solid var(--gray);
