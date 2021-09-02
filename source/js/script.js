@@ -1,3 +1,4 @@
+/* eslint-disable no-undef */
 /* eslint-disable prefer-const */
 /* eslint-disable no-shadow */
 /* eslint-disable id-length */
@@ -40,3 +41,15 @@ for (let faqItem of faqItems) {
 switchSlides(programButtons, programItems);
 switchSlides(lifeButtons, lifeElements);
 
+new Swiper('.swiper-container', {
+  loop: true,
+  slidesPerView: 1,
+  navigation: {
+    nextEl: '.reviews__control-button--next',
+    prevEl: '.reviews__control-button--prev',
+  },
+  pagination: {
+    el: '.reviews__pagination',
+    type: 'fraction',
+  },
+});
