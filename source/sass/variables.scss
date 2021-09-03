@@ -1,6 +1,6 @@
 $tablet-width-only: 560px;
 $tablet-width: 768px;
-$desktop-width: 1024px;
+$desktop-width: 1042px;
 $desktop-width-only: 1366px;
 
 :root {
@@ -38,6 +38,8 @@ $font-montserrat: "Montserrat", "Arial", sans-serif;
 
 $border-dashed: 1px dashed $grey-20;
 $border-yellow: 4px solid var(--yellow);
+$border-yellow-2: 2px solid var(--yellow);
 $border-0: 1px dashed var(--black-0);
 $border-dashed: 1px dashed var(--special-black);
 $border-2: 2px solid var(--gray);
+$border-blue: 1px dashed var(--blue);

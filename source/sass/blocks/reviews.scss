@@ -8,7 +8,7 @@
   background-size: 288px 261px, 100% 324px;
 
   @media (min-width: $desktop-width) {
-    padding: 128px 0 78px;
+    padding: 128px 0 0;
     background-image:
       url("../img/reviews-sketch-big.png"),
       url("../img/reviews-bg-big.png");
@@ -70,6 +70,10 @@
   height: 320px;
   display: block;
   margin: 0 auto;
+  mask-image: url("../img/reviews-mask.png");
+  mask-position: 50% 050%;
+  mask-repeat: no-repeat;
+  mask-size: 240px 320px;
 
   @media (min-width: $tablet-width) {
     margin: 0;
@@ -78,6 +82,7 @@
   @media (min-width: $desktop-width) {
     width: 364px;
     height: 480px;
+    mask-size: 364px 480px;
   }
 }
 
@@ -195,7 +200,6 @@
   line-height: 150%;
   font-family: $font-fira-sans;
   color: var(--special-black);
-
   opacity: 0.5;
 }
 
@@ -237,10 +241,6 @@
     right: 0;
   }
 }
-
-// .reviews__item {}
-
-// .reviews__link {}
 
 .reviews__social-svg {
   width: 24px;
