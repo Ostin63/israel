@@ -149,8 +149,11 @@
       <p class="want-go__text">Оставьте свой телефон и мы свяжемся с вами, подберём куратора и ответим на все вопросы!
       </p>
       <form class="want-go__form" action="https://echo.htmlacademy.ru/" method="POST">
-        <label for="phone"></label>
-        <input class="want-go__input" type="tel" id="phone" placeholder="телефон">
+        <div class="want-go__input-wrapper">
+          <label for="phone"></label>
+          <input class="want-go__input" type="tel" id="phone" placeholder="телефон">
+          <label class="want-go__label-error" for="phone">Ошибка: неверный формат</label>
+        </div>
         <button class="want-go__submit" type="submit">перезвоните мне</button>
       </form>
     </section>
@@ -571,8 +574,8 @@
             </div>
             <div class="details__feedback-wrapper-input">
               <label for="feedback-phone"></label>
-              <input class="feedback__input feedback__input--phone" type="tel" id="feedback-phone"
-                placeholder="+7 (923) 41         ">
+              <input class="feedback__input feedback__input--phone" type="tel" id="feedback-phone" placeholder="+7 (923) 41">
+              <label class="feedback__label-error" for="phone">Ошибка: неверный формат</label>
             </div>
             <button class="details__feedback-button" type="submit">перезвоните мне</button>
           </form>

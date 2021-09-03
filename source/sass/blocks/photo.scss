@@ -72,6 +72,15 @@
   @media (min-width: $tablet-width-only) {
     grid-column: 3 / -2;
   }
+
+  &:hover,
+  &:focus {
+    background: $gradient-hover;
+  }
+
+  &:active {
+    background: $gradient-click;
+  }
 }
 
 .photo__svg {

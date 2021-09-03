@@ -91,6 +91,15 @@
       color: var(--white);
     }
 
+    &:hover,
+    &:focus {
+      background: $gradient-hover;
+    }
+
+    &:active {
+      background: $gradient-click;
+    }
+
     @media (min-width: $desktop-width) {
       position: relative;
       border-width: 34px 0 34px 30px;
