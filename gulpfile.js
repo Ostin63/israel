@@ -88,6 +88,7 @@ const copy = (done) => {
   src([
     'source/fonts/*.{woff2,woff}',
     'source/img/**/*.{jpg,png}',
+    'source/video/*.mp4',
   ], {
     base: 'source',
   })

@@ -19,7 +19,7 @@ $desktop-width-only: 1366px;
   --gray: #e3e3e3;
 }
 
-$grey-20: rgba(#484848, 20%);
+$grey-20: rgba(#484848, 0.2);
 
 $gradient-active: linear-gradient(108.42deg, var(--yellow) 20.46%, var(--gradient-active) 65.31%);
 $gradient-hover: linear-gradient(109.15deg, var(--yellow) -50.3%, var(--gradient-active) 63.1%);
@@ -37,6 +37,7 @@ $font-raleway: "Raleway", "Arial", sans-serif;
 $font-montserrat: "Montserrat", "Arial", sans-serif;
 
 $border-dashed: 1px dashed $grey-20;
+$border-1: 1px solid $grey-20;
 $border-yellow: 4px solid var(--yellow);
 $border-yellow-2: 2px solid var(--yellow);
 $border-0: 1px dashed var(--black-0);

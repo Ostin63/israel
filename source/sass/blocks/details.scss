@@ -1,5 +1,6 @@
 .details {
   padding: 0 0 64px;
+  border-bottom: $border-1;
 
   @media (min-width: $desktop-width-only) {
     padding: 80px 0 64px;
@@ -247,10 +248,14 @@
 .details__feedback-form {
   margin: 32px 0 0;
 
-  @media (min-width: $desktop-width) {
-    width: 764px;
+  @media (min-width: $tablet-width) {
+
     display: flex;
     justify-content: space-between;
+  }
+
+  @media (min-width: $desktop-width-only) {
+    width: 764px;
   }
 }
 
@@ -275,7 +280,7 @@
   }
 
 
-  @media (min-width: $desktop-width) {
+  @media (min-width: $tablet-width) {
     width: 250px;
     margin: 0;
   }
