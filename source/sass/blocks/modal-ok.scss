@@ -1,0 +1,126 @@
+.modal-ok {
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  display: none;
+  background-color: $bg-95;
+  z-index: 20;
+
+  &.active {
+    display: block;
+  }
+}
+
+.modal-ok__wrapper {
+  position: fixed;
+  width: 320px;
+  height: 100%;
+  top: 0;
+  left: calc(50% - 320px / 2);
+  padding: 24px 24px 40px 24px;
+  border-radius: 8px;
+  background: var(--white);
+  opacity: 1;
+  z-index: 1;
+
+  &::before {
+    position: absolute;
+    width: 68px;
+    height: 64px;
+    top: 200px;
+    left: calc(50% - 68px / 2);
+    content: "";
+    background: url("../img/stack.svg#ok") 50% 50% no-repeat;
+    background-size: cover;
+    z-index: 25;
+
+    @media (min-width: $tablet-width) {
+      top: 120px;
+    }
+  }
+
+  @media (min-width: $tablet-width) {
+    width: 486px;
+    height: auto;
+    top: 123px;
+    left: calc(50% - 486px / 2);
+    padding: 32px 32px 212px 49px;
+  }
+}
+
+.modal-ok__close {
+  width: 18px;
+  height: 18px;
+  margin-left: auto;
+  background: url("../img/stack.svg#close") 50% 50% no-repeat;
+  background-size: cover;
+  cursor: pointer;
+
+  &:hover,
+  &:focus {
+    opacity: 0.5;
+  }
+
+  &:active {
+    opacity: 0.3;
+  }
+}
+
+.modal-ok__title {
+  margin: 255px 0 0;
+  text-align: center;
+  font-weight: bold;
+  font-size: 28px;
+  line-height: 34px;
+  letter-spacing: -0.02em;
+  font-family: $font-montserrat;
+  color: var(--blue);
+
+  @media (min-width: $tablet-width) {
+    margin: 167px 0 0;
+  }
+}
+
+.modal-ok__text {
+  margin: 16px auto 32px auto;
+  font-weight: normal;
+  font-size: 15px;
+  line-height: 170%;
+  text-align: center;
+  font-family: $font-fira-sans;
+  color: var(--special-black);
+  opacity: 0.87;
+
+  @media (min-width: $tablet-width) {
+    width: 350px;
+  }
+}
+
+.modal-ok__button {
+  width: 264px;
+  height: 59px;
+  margin-left: calc(50% - 264px / 2);
+  padding: 0;
+  border: none;
+  background: $gradient-active;
+  border-radius: 80px;
+  font-weight: 500;
+  font-size: 17px;
+  line-height: 20px;
+  text-align: center;
+  font-variant: small-caps;
+  font-family: $font-fira-sans;
+  color: var(--white);
+  text-shadow: $shadow-text-12;
+
+  &:hover,
+  &:focus {
+    background: $gradient-hover;
+  }
+
+  &:active {
+    background: $gradient-click;
+  }
+}

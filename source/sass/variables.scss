@@ -6,6 +6,7 @@ $desktop-width-only: 1366px;
 :root {
   --white: #ffffff;
   --black: #000000;
+  --black-light: #010101;
   --black-0: rgba(0, 0, 0, 0);
   --black-5: rgba(0, 0, 0, 0.05);
   --black-10: rgba(0, 0, 0, 0.1);
@@ -19,6 +20,7 @@ $desktop-width-only: 1366px;
   --gray: #e3e3e3;
 }
 
+$bg-95: rgba(#ebebeb, 0.95);
 $grey-20: rgba(#484848, 0.2);
 $error-50: rgba(#ff0000, 0.5);
 

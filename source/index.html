@@ -6,6 +6,16 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Israel</title>
+  <link rel="icon" href="favicon.ico">
+  <link rel="icon" href="img/favicon/favicon.svg" type="image/svg+xml">
+  <link rel="apple-touch-icon" href="img/favicon/favicon-180.png">
+  <link rel="manifest" href="manifest.webmanifest">
+  <link rel="preload" href="fonts/Firasansregular.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="preload" href="fonts/Firasansmedium.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="preload" href="fonts/Firasanssemibold.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="preload" href="fonts/Raleway-bold.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="preload" href="fonts/Raleway-ExtraBold.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="preload" href="fonts/Montserrat-Bold.woff2" as="font" type="font/woff2" crossorigin>
   <link rel="stylesheet" href="leaflet/dist/leaflet.css">
   <link rel="stylesheet" href="css/style.min.css">
 </head>
@@ -151,7 +161,7 @@
       <form class="want-go__form" action="https://echo.htmlacademy.ru/" method="POST">
         <div class="want-go__input-wrapper">
           <label for="phone"></label>
-          <input class="want-go__input" type="tel" id="phone" placeholder="телефон">
+          <input class="want-go__input" type="tel" id="phone" name="wantGoPhone" placeholder="телефон">
           <label class="want-go__label-error" for="phone">Ошибка: неверный формат</label>
         </div>
         <button class="want-go__submit" type="submit">перезвоните мне</button>
@@ -569,12 +579,13 @@
           </div>
           <form class="details__feedback-form" action="https://echo.htmlacademy.ru/" method="POST">
             <div class="details__feedback-wrapper-input">
-              <label for="feedback-name"></label>
-              <input class="feedback__input" type="text" id="feedback-name" placeholder="Имя">
+              <label for="feedbackName"></label>
+              <input class="feedback__input" type="text" id="feedbackName" name="feedbackName" placeholder="Имя">
             </div>
             <div class="details__feedback-wrapper-input">
-              <label for="feedback-phone"></label>
-              <input class="feedback__input feedback__input--phone" type="tel" id="feedback-phone" placeholder="+7 (923) 41">
+              <label for="feedbackPhone"></label>
+              <input class="feedback__input feedback__input--phone" type="tel" name="feedbackPhone" id="feedbackPhone"
+                placeholder="+7 (923) 41">
               <label class="feedback__label-error" for="phone">Ошибка: неверный формат</label>
             </div>
             <button class="details__feedback-button" type="submit">перезвоните мне</button>
@@ -617,9 +628,51 @@
     </ul>
   </footer>
 
-  <script src="swiper/swiper-bundle.min.js"></script>
-  <script src="leaflet/dist/leaflet.js"></script>
-  <script src="js/script.min.js"></script>
+  <div class="modal active">
+    <div class="modal__wrapper">
+      <div class="modal__close">
+        <span class="visually-hidden">закрыть</span>
+      </div>
+      <h3 class="modal__title">Заказать звонок</h3>
+      <p class="modal__text">Оставьте ваши контактные данные, мы&nbsp;свяжемся с&nbsp;вами в течение рабочего дня и
+        обязательно поможем найти ответ на ваш вопрос!</p>
+      <form action="modal__form" action="https://echo.htmlacademy.ru/" method="POST">
+        <div class="modal__input-wrapper">
+          <label for="modalName"></label>
+          <input class="modal__input modal__input--name" type="text" name="modalName" id="modalName" placeholder="Имя">
+          <label class="modal__label-error" for="modalName">Ошибка: неверный формат</label>
+        </div>
+        <div class="modal__input-wrapper">
+          <label for="modalPhone"></label>
+          <input class="modal__input modal__input--phone" type="tel" name="modalPhone" id="modalPhone"
+            placeholder="Телефон">
+          <label class="modal__label-error" for="modalPhone">Ошибка: неверный формат</label>
+        </div>
+        <button class="modal__submit" type="submit">перезвоните мне</button>
+        <div class="modal__input-wrapper modal__input-wrapper--checkbox">
+          <input class="visually-hidden modal__input modal__input--checkbox" id="checkbox" type="checkbox"
+            name="checkbox">
+          <label class="modal__label-checkbox" for="checkbox">Нажимая на кнопку, вы даёте согласие на обработку
+            персональных данных</label>
+        </div>
+      </form>
+    </div>
+  </div>
+
+  <div class="modal-ok">
+    <div class="modal-ok__wrapper">
+      <div class="modal-ok__close">
+        <span class="visually-hidden">закрыть</span>
+      </div>
+      <h3 class="modal-ok__title">Заявка принята</h3>
+      <p class="modal-ok__text">Мы приняли ваши данные и вскоре мы перезвоним вам для уточнения деталей!</p>
+      <button class="modal-ok__button">Понятно</button>
+    </div>
+  </div>
+
+      <script src="swiper/swiper-bundle.min.js"></script>
+      <script src="leaflet/dist/leaflet.js"></script>
+      <script src="js/script.min.js"></script>
 </body>
 
 </html>

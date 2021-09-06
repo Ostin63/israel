@@ -55,6 +55,7 @@
 .program__svg-icon {
   fill: var(--special-black);
   opacity: 0.87;
+  box-shadow: $shadow-5;
 }
 
 .program__item-text {
@@ -77,6 +78,33 @@
 
   @media (min-width: $desktop-width) {
     margin: 0 0 10px 0;
+  }
+
+  &:hover,
+  &:focus {
+    .program__svg-icon {
+      fill: var(--black-light);
+      opacity: 1;
+    }
+
+    .program__item-text {
+      color: var(--black-light);
+      opacity: 1;
+    }
+  }
+
+  &:active {
+    .program__svg-icon {
+      fill: var(--gradient-active);
+      opacity: 1;
+    }
+
+    .program__item-text {
+      background: $gradient-active;
+      background-clip: text;
+      -webkit-text-fill-color: transparent;
+      opacity: 1;
+    }
   }
 
   &.active {
