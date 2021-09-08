@@ -90,8 +90,7 @@
   line-height: 20px;
   font-variant: small-caps;
   font-family: $font-fira-sans;
-  color: var(--special-black);
-  opacity: 0.5;
+  color: $grey-50;
 
   @media (min-width: $tablet-width) {
     border-radius: 80px 0 0 80px;
@@ -112,7 +111,6 @@
   &:hover,
   &:focus-visible {
     border: $border-yellow-2;
-    opacity: 0.87;
   }
 
   &:invalid:not(:placeholder-shown) {

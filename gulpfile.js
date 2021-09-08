@@ -4,13 +4,12 @@ const plumber = require('gulp-plumber');
 const sourcemap = require('gulp-sourcemaps');
 const sass = require('gulp-sass');
 const postcss = require('gulp-postcss');
-const autoprefixer = require('autoprefixer');
+// const autoprefixer = require('autoprefixer');
 const csso = require('postcss-csso');
 const rename = require('gulp-rename');
 const htmlmin = require('gulp-htmlmin');
 const terser = require('gulp-terser');
 const imagemin = require('gulp-imagemin');
-const webp = require('gulp-webp');
 const svgsprite = require('gulp-svg-sprite');
 const del = require('del');
 const sync = require('browser-sync').create();
@@ -20,7 +19,7 @@ const styles = () => src('source/sass/style.scss')
   .pipe(sourcemap.init())
   .pipe(sass())
   .pipe(postcss([
-    autoprefixer(),
+    // autoprefixer(),
     csso(),
   ]))
   .pipe(rename('style.min.css'))
@@ -56,13 +55,6 @@ const images = () => src('source/img/**/*.{png,jpg}')
   ]))
   .pipe(dest('build/img'));
 exports.images = images;
-
-const createWebp = () => src('source/img/*.{jpg,png}')
-  .pipe(webp({
-    quality: 90,
-  }))
-  .pipe(dest('build/img'));
-exports.createWebp = createWebp;
 
 const logo = () => src('source/img/logo/*.svg')
   .pipe(svgsprite({
@@ -149,7 +141,6 @@ const build = series(
     svgstack,
     images,
     copymodules,
-    createWebp,
   ),
 );
 
@@ -165,7 +156,6 @@ exports.default = series(
     logo,
     svgstack,
     copymodules,
-    createWebp,
   ),
   series(
     server,

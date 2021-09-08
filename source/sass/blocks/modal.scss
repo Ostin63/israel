@@ -148,8 +148,7 @@
     font-variant: small-caps;
     text-transform: lowercase;
     font-family: $font-fira-sans;
-    color: var(--special-black);
-    opacity: 0.5;
+    color: $grey-50;
 
     @media (min-width: $tablet-width) {
       width: 365px;
@@ -208,7 +207,6 @@
   &:hover,
   &:focus-visible {
     border: $border-yellow-2;
-    opacity: 0.87;
   }
 
   &:valid:not(:placeholder-shown) {

@@ -639,9 +639,8 @@
       <form class="modal__form" action="https://echo.htmlacademy.ru/" method="POST">
         <div class="modal__input-wrapper">
           <label for="modalName"></label>
-          <input class="modal__input modal__input--name" type="text" name="modalName" id="modalName" placeholder="Имя"
-            required>
-          <span class="modal__error" for="modalName">Ошибка: неверный формат</span>
+          <input class="modal__input modal__input--name" type="text" name="modalName" id="modalName" placeholder="Имя" minlength="2" required>
+          <label class="modal__error" for="modalName">Ошибка: неверный формат</label>
         </div>
         <div class="modal__input-wrapper">
           <label for="modalPhone"></label>

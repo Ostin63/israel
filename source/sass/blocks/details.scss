@@ -288,8 +288,7 @@
   line-height: 20px;
   font-variant: small-caps;
   font-family: $font-fira-sans;
-  color: var(--special-black);
-  opacity: 0.5;
+  color: $grey-50;
 
   &:hover {
     border: $border-yellow-2;
