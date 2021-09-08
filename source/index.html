@@ -161,8 +161,8 @@
       <form class="want-go__form" action="https://echo.htmlacademy.ru/" method="POST">
         <div class="want-go__input-wrapper">
           <label for="phone"></label>
-          <input class="want-go__input" type="tel" id="phone" name="wantGoPhone" placeholder="телефон" required>
-          <label class="want-go__label-error" for="phone">Ошибка: неверный формат</label>
+          <input class="want-go__input" type="tel" id="phone" name="wantGoPhone" placeholder="телефон" pattern="[\+]\d{1}\s[\(]\d{3}[\)]\s\d{3}[\-]\d{2}[\-]\d{2}" minlength="18" maxlength="18" required>
+          <label class="want-go__label-error" for="phone">Неверно +7 (___) ___-__-__</label>
         </div>
         <button class="want-go__submit" type="submit">перезвоните мне</button>
       </form>
@@ -580,13 +580,13 @@
           <form class="details__feedback-form" action="https://echo.htmlacademy.ru/" method="POST">
             <div class="details__feedback-wrapper-input">
               <label for="feedbackName"></label>
-              <input class="feedback__input" type="text" id="feedbackName" name="feedbackName" placeholder="Имя" required>
+              <input class="details__feedback-input details__feedback-input--name" type="text" id="feedbackName" name="feedbackName" placeholder="Имя" minlength="2" required>
+              <label class="details__feedback-error" for="modalName">Ошибка: неверный формат</label>
             </div>
             <div class="details__feedback-wrapper-input">
               <label for="feedbackPhone"></label>
-              <input class="feedback__input feedback__input--phone" type="tel" name="feedbackPhone" id="feedbackPhone"
-                placeholder="+7 (923) 41" required>
-              <label class="feedback__label-error" for="phone">Ошибка: неверный формат</label>
+              <input class="details__feedback-input details__feedback-input--phone" type="tel" name="feedbackPhone" id="feedbackPhone" placeholder="+7 (923) 41" pattern="[\+]\d{1}\s[\(]\d{3}[\)]\s\d{3}[\-]\d{2}[\-]\d{2}" minlength="18" maxlength="18" required>
+              <label class="details__feedback-error" for="phone">Неверно +7 (___) ___-__-__</label>
             </div>
             <button class="details__feedback-button" type="submit">перезвоните мне</button>
           </form>
@@ -639,14 +639,15 @@
       <form class="modal__form" action="https://echo.htmlacademy.ru/" method="POST">
         <div class="modal__input-wrapper">
           <label for="modalName"></label>
-          <input class="modal__input modal__input--name" type="text" name="modalName" id="modalName" placeholder="Имя" required>
-          <label class="modal__label-error" for="modalName">Ошибка: неверный формат</label>
+          <input class="modal__input modal__input--name" type="text" name="modalName" id="modalName" placeholder="Имя"
+            required>
+          <span class="modal__error" for="modalName">Ошибка: неверный формат</span>
         </div>
         <div class="modal__input-wrapper">
           <label for="modalPhone"></label>
-          <input class="modal__input modal__input--phone" type="tel" name="modalPhone" id="modalPhone"
-            placeholder="Телефон" required>
-          <label class="modal__label-error" for="modalPhone">Ошибка: неверный формат</label>
+          <input class="modal__input modal__input--phone" type="tel" name="modalPhone" id="modalPhone" placeholder="Телефон" pattern="[\+]\d{1}\s[\(]\d{3}[\)]\s\d{3}[\-]\d{2}[\-]\d{2}" minlength="18"
+            maxlength="18">
+          <span class="modal__error" for="modalPhone">Неверно +7 (___) ___-__-__</span>
         </div>
         <button class="modal__submit" type="submit">перезвоните мне</button>
         <div class="modal__input-wrapper modal__input-wrapper--checkbox">

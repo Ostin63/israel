@@ -102,6 +102,10 @@
 
     +.want-go__label-error {
       display: block;
+
+      @media (min-width: $tablet-width) {
+        top: 65px;
+      }
     }
   }
 
@@ -109,6 +113,18 @@
   &:focus-visible {
     border: $border-yellow-2;
     opacity: 0.87;
+  }
+
+  &:invalid:not(:placeholder-shown) {
+    border: $border-error;
+
+    +.want-go__label-error {
+      display: block;
+
+      @media (min-width: $tablet-width) {
+        top: 65px;
+      }
+    }
   }
 }
 
