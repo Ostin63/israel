@@ -108,8 +108,7 @@
     }
   }
 
-  &:hover,
-  &:focus-visible {
+  &:hover {
     border: $border-yellow-2;
   }
 
@@ -123,6 +122,11 @@
         top: 65px;
       }
     }
+  }
+
+  &:valid:not(:placeholder-shown) {
+    background: var(--white);
+    border-color: $grey-50;
   }
 }
 

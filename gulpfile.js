@@ -4,7 +4,7 @@ const plumber = require('gulp-plumber');
 const sourcemap = require('gulp-sourcemaps');
 const sass = require('gulp-sass');
 const postcss = require('gulp-postcss');
-// const autoprefixer = require('autoprefixer');
+const autoprefixer = require('autoprefixer');
 const csso = require('postcss-csso');
 const rename = require('gulp-rename');
 const htmlmin = require('gulp-htmlmin');
@@ -19,7 +19,7 @@ const styles = () => src('source/sass/style.scss')
   .pipe(sourcemap.init())
   .pipe(sass())
   .pipe(postcss([
-    // autoprefixer(),
+    autoprefixer(),
     csso(),
   ]))
   .pipe(rename('style.min.css'))
